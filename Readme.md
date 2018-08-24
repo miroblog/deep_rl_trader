@@ -13,6 +13,7 @@ If an agent decides to take a
 
 Only a single position can be opened per trade. 
 * Thus invalid action sequence like `buy - buy` will be considered `buy- hold`.   
+* Default transaction fee is : 0.0005  
 
 Reward is given
 * when the position closes or
@@ -27,8 +28,6 @@ Agent decides optimal action by observing its environment.
 With some modification it can easily be applied to stocks, futures or foregin exchange as well.
 
 [Visualization](https://github.com/miroblog/deep_rl_trader/blob/master/visualize.ipynb) / [Main](https://github.com/miroblog/deep_rl_trader/blob/master/ddqn_rl_trader.py) / [Environment](https://github.com/miroblog/deep_rl_trader/blob/master/TraderEnv.py)
-
-Default transaction fee is : 0.0005  
 
 Sample data provided is 5min ohlcv candle fetched from bitmex.
 * train : `'./data/train/` 70000
