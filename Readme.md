@@ -8,15 +8,15 @@ Agent is implemented using `keras-rl`(https://github.com/keras-rl/keras-rl)
 Agent is expected to learn useful action sequences to maximize profit in a given environment.  
 Environment limits agent to either buy, sell, hold stock(coin) at each step.  
 If an agent decides to take a 
-⋅⋅* LONG position it will initiate sequence of action such as `buy- hold- hold- sell`    
-⋅⋅* for a SHORT position vice versa (e.g.) `sell - hold -hold -buy`.    
+⋅⋅*LONG position it will initiate sequence of action such as `buy- hold- hold- sell`    
+⋅⋅*for a SHORT position vice versa (e.g.) `sell - hold -hold -buy`.    
 
 Only a single position can be opened per trade. 
-⋅⋅* Thus invalid action sequence like `buy - buy` will be considered `buy- hold`.   
+⋅⋅*Thus invalid action sequence like `buy - buy` will be considered `buy- hold`.   
 
 Reward is given
-⋅⋅* when the position closes or
-⋅⋅* an episode is finished.   
+⋅⋅*when the position closes or
+⋅⋅*an episode is finished.   
   
 This type of sparse reward granting scheme takes longer to train but is most successful at learning long term dependencies.  
 
