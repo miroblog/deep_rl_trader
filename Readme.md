@@ -110,10 +110,12 @@ def create_model(shape, nb_actions):
 
 ### Running 
 [Verbose] While training or testing, 
-* environment will print out (current_tick , # Long, # Short, Portfolio)  
-[Portfolio] 
+* environment will print out (current_tick , # Long, # Short, Portfolio)
+  
+[Portfolio]  
 * initial portfolio starts with 100*10000(krw-won)     
-* reflects change in portfolio value if the agent had invested 100% of its balance every time it opened a position.     
+* reflects change in portfolio value if the agent had invested 100% of its balance every time it opened a position.       
+  
 [Reward] simply pct earning per trade.  
 
 ### Inital Result
