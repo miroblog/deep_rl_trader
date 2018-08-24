@@ -16,7 +16,7 @@ Only a single position can be opened per trade.
 * Default transaction fee is : 0.0005  
 
 Reward is given
-* when the position closes or
+* when the position is closed or
 * an episode is finished.   
   
 This type of sparse reward granting scheme takes longer to train but is most successful at learning long term dependencies.  
