@@ -116,7 +116,8 @@ def create_model(shape, nb_actions):
 * initial portfolio starts with 100*10000(krw-won)     
 * reflects change in portfolio value if the agent had invested 100% of its balance every time it opened a position.       
   
-[Reward] simply pct earning per trade.  
+[Reward] 
+* simply pct earning per trade.    
 
 ### Inital Result
 
