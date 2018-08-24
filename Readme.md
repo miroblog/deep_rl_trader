@@ -26,7 +26,11 @@ Agent decides optimal action by observing its environment.
 
 With some modification it can easily be applied to stocks, futures or foregin exchange as well.
 
-[Visualization](https://github.com/miroblog/deep_rl_trader/blob/master/visualize_trade.py) / [Main](https://github.com/miroblog/deep_rl_trader/blob/master/ddqn_rl_trader.py) / [Environment](https://github.com/miroblog/deep_rl_trader/blob/master/TraderEnv.py)
+[Visualization](https://github.com/miroblog/deep_rl_trader/blob/master/visualize.ipynb) / [Main](https://github.com/miroblog/deep_rl_trader/blob/master/ddqn_rl_trader.py) / [Environment](https://github.com/miroblog/deep_rl_trader/blob/master/TraderEnv.py)
+
+Sample data provided is 5min ohlcv candle fetched from bitmex.
+* train : `'./data/train/` 70000
+* test : `'./data/train/` 16000
 
 ### Prerequisites
 
