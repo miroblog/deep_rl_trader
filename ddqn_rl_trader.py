@@ -15,13 +15,18 @@ from TraderEnv import OhlcvEnv
 # custom normalizer
 from util import NormalizerProcessor
 
+def create_model(shape, nb_actions):
+    model = Sequential()
+    model.add(CuDNNLSTM(64, input_shape=shape, return_sequences=True))
+    model.add(CuDNNLSTM(64))
+    model.add(Dense(32))
+    model.add(Activation('relu'))
+    model.add(Dense(nb_actions, activation='linear'))
 
 def main():
     # OPTIONS
     ENV_NAME = 'OHLCV-v0'
     TIME_STEP = 30
-    WINDOW_LENGTH = TIME_STEP
-    ADDITIONAL_STATE = 4
 
     # Get the environment and extract the number of actions.
     PATH_TRAIN = "./data/train/"
@@ -34,13 +39,7 @@ def main():
     env.seed(123)
 
     nb_actions = env.action_space.n
-
-    model = Sequential()
-    model.add(CuDNNLSTM(64, input_shape=env.shape, return_sequences=True))
-    model.add(CuDNNLSTM(64))
-    model.add(Dense(32))
-    model.add(Activation('relu'))
-    model.add(Dense(nb_actions, activation='linear'))
+    model = create_model(shape=env.shape, nb_actions=nb_actions)
     print(model.summary())
 
     # Finally, we configure and compile our agent. You can use every built-in Keras optimizer and even the metrics!
