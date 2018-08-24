@@ -133,7 +133,8 @@ def create_model(shape, nb_actions):
 * total cumulative return :[0] -> [3.670099054203348]  
 * portfolio value [1000000] -> [29415305.46593453]  
 
-29 fold return, 3.67 reward... clearly overfitting is happening. 
+Wow ! 29 fold return, 3.67 reward !   
+! Disclaimer : if may have overfitted :(
 
 ## Authors
 
