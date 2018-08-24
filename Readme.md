@@ -36,6 +36,7 @@ pip install -r requirements.txt
 
 ## Getting Started 
 
+### Create Environment & Agent
 ```python
 # create environment
 # OPTIONS
@@ -68,8 +69,9 @@ dqn = DQNAgent(model=model, nb_actions=nb_actions, memory=memory, nb_steps_warmu
                enable_dueling_network=True, dueling_type='avg', target_model_update=1e-2, policy=policy,
                processor=NormalizerProcessor())
 dqn.compile(Adam(lr=1e-3), metrics=['mae'])
+```
 
-
+### Train and Validate
 ```python
 # now train and test agent
 while True:
@@ -92,7 +94,7 @@ while True:
 
 ```
 
-## Configuring Agent
+### Configuring Agent
 ```python
 ## simply plug in any keras model :)
 def create_model(shape, nb_actions):
@@ -104,20 +106,22 @@ def create_model(shape, nb_actions):
     model.add(Dense(nb_actions, activation='linear'))
 ```
 
-## Running 
+### Running 
 [Verbose] While training or testing, environment will print out (current_tick , # Long, # Short, Portfolio)  
 [Portfolio] initial portfolio starts with 100*10000(krw-won),   
 reflects change in portfolio value if the agent had invested 100% of its balance every time it opened a position.  
 [Reward] simply pct earning per trade.  
 
-## Inital Result
+### Inital Result
 
-![trade](https://github.com/miroblog/limit_orderbook_prediction/blob/master/image/features.png)  
-![partial_trade](https://github.com/miroblog/limit_orderbook_prediction/blob/master/image/features.png)
-![cum_return](https://github.com/miroblog/limit_orderbook_prediction/blob/master/image/features.png)
+![trade](https://github.com/miroblog/deep_rl_trader/blob/master/png/full_trade_history.png)  
+![partial_trade](https://github.com/miroblog/deep_rl_trader/blob/master/png/partial_trade_history.png)
+![cum_return](https://github.com/miroblog/deep_rl_trader/blob/master/png/cum_return.png)
 
 total cumulative return :  3.670099054203348
 portfolio value 1000000 -> [29415305.46593453]
+
+29 fold return, 3.67 reward... clearly overfitting is happening. 
 
 ## Authors
 
