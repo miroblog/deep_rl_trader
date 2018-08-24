@@ -26,6 +26,8 @@ Agent decides optimal action by observing its environment.
 
 With some modification it can easily be applied to stocks, futures or foregin exchange as well.
 
+[Visualization](https://github.com/miroblog/deep_rl_trader/blob/master/visualize_trade.py)
+
 ### Prerequisites
 
 keras-rl, numpy, tensorflow ... etc
@@ -120,8 +122,8 @@ def create_model(shape, nb_actions):
 ![partial_trade](https://github.com/miroblog/deep_rl_trader/blob/master/png/partial_trade_history.png)
 ![cum_return](https://github.com/miroblog/deep_rl_trader/blob/master/png/cum_return.png)
 
-total cumulative return :  3.670099054203348
-portfolio value 1000000 -> [29415305.46593453]
+total cumulative return :  [3.670099054203348]
+portfolio value [1000000] -> [29415305.46593453]
 
 29 fold return, 3.67 reward... clearly overfitting is happening. 
 
