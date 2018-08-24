@@ -126,8 +126,10 @@ def create_model(shape, nb_actions):
 
 ### Inital Result
 
+#### Trade History : Buy (green) Sell (red)
 ![trade](https://github.com/miroblog/deep_rl_trader/blob/master/png/full_trade_history.png)  
 ![partial_trade](https://github.com/miroblog/deep_rl_trader/blob/master/png/partial_trade_history.png)
+#### Cumulative Return, Max Drawdown Period (red)
 ![cum_return](https://github.com/miroblog/deep_rl_trader/blob/master/png/cum_return.png)
 
 * total cumulative return :[0] -> [3.670099054203348]  
