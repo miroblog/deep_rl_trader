@@ -39,6 +39,9 @@ keras-rl, numpy, tensorflow ... etc
 
 ```python
 pip install -r requirements.txt
+
+# change "keras-rl/core.py" to "./modified/core.py"
+
 ```
 
 ## Getting Started 
