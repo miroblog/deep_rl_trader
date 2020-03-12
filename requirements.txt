@@ -125,7 +125,7 @@ Pillow==4.2.1
 ply==3.9
 prompt-toolkit==1.0.9
 protobuf==3.6.1
-psutil==5.0.1
+psutil==5.6.6
 py==1.4.32
 pyasn1==0.1.9
 pycares==2.3.0
