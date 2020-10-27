@@ -38,7 +38,7 @@ conda==4.5.10
 configobj==5.0.6
 configparser==3.5.0
 contextlib2==0.5.4
-cryptography==1.7.1
+cryptography==3.2
 cx-Freeze==5.0.2
 cycler==0.10.0
 Cython==0.28.1
