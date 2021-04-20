@@ -126,7 +126,7 @@ ply==3.9
 prompt-toolkit==1.0.9
 protobuf==3.6.1
 psutil==5.0.1
-py==1.4.32
+py==1.10.0
 pyasn1==0.1.9
 pycares==2.3.0
 pychrome==0.2.2
