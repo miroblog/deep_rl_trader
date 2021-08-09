@@ -148,7 +148,7 @@ pytest==3.0.5
 python-dateutil==2.6.1
 pytz==2016.10
 PyVirtualDisplay==0.2.1
-pywin32==220
+pywin32==301
 PyYAML==3.12
 pyzmq==16.0.2
 QtAwesome==0.4.3
