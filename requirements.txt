@@ -9,7 +9,7 @@ astor==0.7.1
 astroid==1.4.9
 astropy==2.0.3
 async-timeout==2.0.0
-Babel==2.3.4
+Babel==2.9.1
 backports.shutil-get-terminal-size==1.0.0
 backtrader==1.9.64.122
 beautifulsoup4==4.5.3
