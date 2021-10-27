@@ -43,7 +43,7 @@ cx-Freeze==5.0.2
 cycler==0.10.0
 Cython==0.28.1
 cytoolz==0.8.2
-dask==0.17.4
+dask==2021.10.0
 datashape==0.5.4
 decorator==4.0.11
 dill==0.2.5
