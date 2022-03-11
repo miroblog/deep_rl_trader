@@ -121,7 +121,7 @@ pathlib2==2.2.0
 patsy==0.4.1
 pep8==1.7.0
 pickleshare==0.7.4
-Pillow==4.2.1
+Pillow==9.0.1
 ply==3.9
 prompt-toolkit==1.0.9
 protobuf==3.6.1
