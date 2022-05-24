@@ -177,7 +177,7 @@ TA-Lib==0.4.17
 tables==3.4.2
 tailer==0.4.1
 tensorboard==1.10.0
-tensorflow-gpu==1.10.0
+tensorflow-gpu==2.6.4
 tensorflow-tensorboard==0.4.0rc3
 tensorforce==0.4.3
 termcolor==1.1.0
