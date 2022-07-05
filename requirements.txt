@@ -128,7 +128,7 @@ protobuf==3.6.1
 psutil==5.0.1
 py==1.4.32
 pyasn1==0.1.9
-pycares==2.3.0
+pycares==4.2.0
 pychrome==0.2.2
 pycosat==0.6.3
 pycparser==2.17
