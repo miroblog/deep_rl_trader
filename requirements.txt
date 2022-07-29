@@ -96,7 +96,7 @@ Markdown==2.6.11
 MarkupSafe==0.23
 matplotlib==2.2.2
 menuinst==1.4.4
-mistune==0.7.3
+mistune==2.0.3
 mpmath==0.19
 multidict==3.3.2
 multipledispatch==0.4.9
