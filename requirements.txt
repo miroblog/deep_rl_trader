@@ -101,7 +101,7 @@ mpmath==0.19
 multidict==3.3.2
 multipledispatch==0.4.9
 mxnet==0.12.1
-nbconvert==4.2.0
+nbconvert==6.3.0
 nbformat==4.2.0
 networkx==1.11
 nltk==3.2.5
