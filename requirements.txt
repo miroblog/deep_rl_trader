@@ -25,7 +25,7 @@ Bottleneck==1.2.1
 bz2file==0.98
 cchardet==2.1.1
 ccxt==1.10.543
-certifi==2018.8.13
+certifi==2022.12.7
 cffi==1.9.1
 chardet==3.0.4
 chest==0.2.3
